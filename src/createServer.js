@@ -45,10 +45,6 @@ function createServer() {
       res.statusMessage = 'Bad request';
       res.end(JSON.stringify({ errors }));
 
-      return;
-    }
-
-    const result = convertToCase(decodedOriginalText, toCase);
 
     res.statusCode = 200;
     res.statusMessage = 'OK';
